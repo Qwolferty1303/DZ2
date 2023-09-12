@@ -1,0 +1,62 @@
+.brickWall {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.clock {
+    background-color: white;
+    rotate: 90deg;
+    width: 300px;
+    height: 300px;
+    border: 10px solid #333;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 15px -20px 50px 10px;
+}
+
+.center-circle {
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hand {
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    background-color: black;
+    top: 50%;
+    transform-origin: 100%;
+}
+
+.hour-hand {
+    width: 40;
+    background-color: red;
+}
+
+h1{
+    text-align: center;
+}
+
+.textColor{
+    font-size: 2.2em;
+    color: inherit;
+}
